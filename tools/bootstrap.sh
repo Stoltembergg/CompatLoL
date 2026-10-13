@@ -6,8 +6,12 @@ mkdir -p .work/upstream
 clone() {
   name=$1 revision=$2
   path=.work/upstream/$name
-  if test ! -d "$path/.git"; then git clone --no-checkout "https://github.com/darlinghq/$name.git" "$path"; fi
-  test -z "$(git -C "$path" status --porcelain)" || { echo "Refusing dirty upstream $name" >&2; exit 2; }
+  if test -d "$path/.git"; then
+    test -z "$(git -C "$path" status --porcelain)" || { echo "Refusing dirty upstream $name" >&2; exit 2; }
+  else
+    # A fresh --no-checkout clone intentionally has no populated worktree/index.
+    git clone --no-checkout "https://github.com/darlinghq/$name.git" "$path"
+  fi
   git -C "$path" checkout --detach "$revision"
   git -C "$path" submodule update --init --recursive
 }

@@ -352,6 +352,38 @@ class AuditTests(unittest.TestCase):
         shader.symlink_to(ROOT / 'config/audit-linux.json')
         self.assertCode('FIXTURE_PATH_REFUSED', audit.approved_fixtures, self.root, source)
 
+    def test_bootstrap_fresh_clone_and_dirty_existing_checkout(self):
+        import subprocess
+        fixture = self.root / 'fixtures/synthetic.git'
+        fixture.mkdir(parents=True)
+        env = dict(os.environ, GIT_CONFIG_NOSYSTEM='1', GIT_CONFIG_GLOBAL=os.devnull)
+        def git(*args):
+            return subprocess.run(['git', '-C', str(fixture), *args], env=env,
+                                  check=True, capture_output=True, text=True).stdout.strip()
+        git('init')
+        (fixture / 'source.txt').write_text('open synthetic fixture\n')
+        git('add', 'source.txt')
+        git('-c', 'user.name=Test', '-c', 'user.email=test@example.invalid',
+            '-c', 'commit.gpgsign=false', 'commit', '-m', 'Synthetic bootstrap regression')
+        revision = git('rev-parse', 'HEAD')
+        workspace = self.root / 'bootstrap-workspace'
+        (workspace / 'tools').mkdir(parents=True)
+        script = workspace / 'tools/bootstrap-test.sh'
+        prefix = (ROOT / 'tools/bootstrap.sh').read_text().split('clone darling ')[0]
+        script.write_text(prefix + '\nclone synthetic ' + revision + '\n')
+        env.update(GIT_CONFIG_COUNT='1', GIT_CONFIG_KEY_0='url.' +
+                   (self.root / 'fixtures').as_uri() + '/.insteadOf',
+                   GIT_CONFIG_VALUE_0='https://github.com/darlinghq/', GIT_ALLOW_PROTOCOL='file')
+        result = subprocess.run(['sh', str(script)], env=env, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        checkout = workspace / '.work/upstream/synthetic'
+        self.assertEqual((checkout / 'source.txt').read_text(), 'open synthetic fixture\n')
+        (checkout / 'source.txt').write_text('keep my local change\n')
+        result = subprocess.run(['sh', str(script)], env=env, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn('Refusing dirty upstream synthetic', result.stderr)
+        self.assertEqual((checkout / 'source.txt').read_text(), 'keep my local change\n')
+
     def test_provenance_unconfirmed_by_default(self):
         (self.root / 'config').mkdir()
         (self.root / 'config/audit-fixtures.json').write_text('{"schema_version":1,"approved":[]}')
