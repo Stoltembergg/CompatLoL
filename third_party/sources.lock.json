@@ -1,0 +1,1810 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "url": "https://github.com/darlinghq/darling.git",
+      "revision": "60ba801decee7a00782f74f6be4c8ffb013f79ff",
+      "license": "GPL-3.0; mixed submodules",
+      "gitlinks": [
+        {
+          "path": "src/external/AvailabilityVersions",
+          "revision": "e28c029a8fa46fa933cbf6d6d9a1c00978c5fad1",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-AvailabilityVersions",
+            "revision": "e28c029a8fa46fa933cbf6d6d9a1c00978c5fad1",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/BerkeleyDB",
+          "revision": "1411173f0eb71f96ab6134de4e052d16acb8c673",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-BerkeleyDB.git",
+            "revision": "1411173f0eb71f96ab6134de4e052d16acb8c673",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/DSTools",
+          "revision": "e015256b16965ac032412f2277c608c7213c03b3",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-DSTools.git",
+            "revision": "e015256b16965ac032412f2277c608c7213c03b3",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/DirectoryService",
+          "revision": "feb9742f574ab812a210634fd3997f19b645095f",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-DirectoryService.git",
+            "revision": "feb9742f574ab812a210634fd3997f19b645095f",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/Heimdal",
+          "revision": "3dfb09751063d6c144143edfb2ef13aa3e8c57de",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-Heimdal.git",
+            "revision": "3dfb09751063d6c144143edfb2ef13aa3e8c57de",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/IOKitTools",
+          "revision": "df58be2f134f7adbdd3c760a165ad3501ee82fb5",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-IOKitTools.git",
+            "revision": "df58be2f134f7adbdd3c760a165ad3501ee82fb5",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/IOKitUser",
+          "revision": "534684e6748dffbd875c6cd1942477a52b66a077",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-iokituser.git",
+            "revision": "534684e6748dffbd875c6cd1942477a52b66a077",
+            "license": "audit-required",
+            "gitlinks": [
+              {
+                "path": "darling/submodules/IOGraphics",
+                "revision": "905186151d713259296f3ae9458195a7097ea323",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/darlinghq/darling-IOGraphics.git",
+                  "revision": "905186151d713259296f3ae9458195a7097ea323",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              },
+              {
+                "path": "darling/submodules/IOHIDFamily",
+                "revision": "189e98e32092d5f5a2c365cc85fd36ac7da2d371",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/darlinghq/darling-IOHIDFamily.git",
+                  "revision": "189e98e32092d5f5a2c365cc85fd36ac7da2d371",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "path": "src/external/IONetworkingFamily",
+          "revision": "28afb431947b8e8dbbb120db7632ba6de229bf23",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-IONetworkingFamily.git",
+            "revision": "28afb431947b8e8dbbb120db7632ba6de229bf23",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/IOStorageFamily",
+          "revision": "33178aef923d9c99f1819db2ada253054f4dd812",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-iostoragefamily.git",
+            "revision": "33178aef923d9c99f1819db2ada253054f4dd812",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/JavaScriptCore",
+          "revision": "93410cc0dbc7a961d58d048c151117acdb18a566",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-JavaScriptCore.git",
+            "revision": "93410cc0dbc7a961d58d048c151117acdb18a566",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/Libinfo",
+          "revision": "93d242ce3f86d1de67522279edb3a2dcb23f30c7",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-Libinfo.git",
+            "revision": "93d242ce3f86d1de67522279edb3a2dcb23f30c7",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/MITKerberosShim",
+          "revision": "39c014d0c54f9ae922be0d697aa6cc1b19c117b6",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-MITKerberosShim.git",
+            "revision": "39c014d0c54f9ae922be0d697aa6cc1b19c117b6",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/OpenAL",
+          "revision": "7c60cf7109b7a3a8f5d41ed8b84d340a8d768525",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-openal.git",
+            "revision": "7c60cf7109b7a3a8f5d41ed8b84d340a8d768525",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/OpenDirectory",
+          "revision": "67a8ad2ed0b06775bf53839446e2df7d49ab1c96",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-opendirectory.git",
+            "revision": "67a8ad2ed0b06775bf53839446e2df7d49ab1c96",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/OpenLDAP",
+          "revision": "3b15390bbcad8234aabb3246b0552105b17118d0",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-openldap.git",
+            "revision": "3b15390bbcad8234aabb3246b0552105b17118d0",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/SecurityTokend",
+          "revision": "c826860db4061667af6f0c3aa55282aab0924e1a",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-SecurityTokend.git",
+            "revision": "c826860db4061667af6f0c3aa55282aab0924e1a",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/SmartCardServices",
+          "revision": "ec53ce56972565047a716ab166176f203f520393",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-SmartCardServices.git",
+            "revision": "ec53ce56972565047a716ab166176f203f520393",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/TextEdit",
+          "revision": "99ec72a94dab166eefa264e9802ebd0d80aca845",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-TextEdit.git",
+            "revision": "99ec72a94dab166eefa264e9802ebd0d80aca845",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/WTF",
+          "revision": "88a36e496a6f285a9e15140c2c431b817bae353b",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-WTF.git",
+            "revision": "88a36e496a6f285a9e15140c2c431b817bae353b",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/WebCore",
+          "revision": "47fac4c8130ea9afc9b9df68c81ade56ca7ea57e",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-WebCore.git",
+            "revision": "47fac4c8130ea9afc9b9df68c81ade56ca7ea57e",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/adv_cmds",
+          "revision": "56dcf5ebeb822650d7929f666be58544b2391f6e",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-adv_cmds.git",
+            "revision": "56dcf5ebeb822650d7929f666be58544b2391f6e",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/apr",
+          "revision": "5aa6eba89e497a67f1b9db7842371141a8616674",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-apr.git",
+            "revision": "5aa6eba89e497a67f1b9db7842371141a8616674",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/architecture",
+          "revision": "63162c4744e9bd07673d4c29f8825f105f670e44",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-architecture",
+            "revision": "63162c4744e9bd07673d4c29f8825f105f670e44",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/awk",
+          "revision": "5d46e527461bce5fa10b89320a1c6ce5f1ae38b6",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-awk.git",
+            "revision": "5d46e527461bce5fa10b89320a1c6ce5f1ae38b6",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/bash",
+          "revision": "2ebbba45039182784202b17069e122367ee63946",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-bash.git",
+            "revision": "2ebbba45039182784202b17069e122367ee63946",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/basic_cmds",
+          "revision": "b1ed4f0f6a981590542071d8b36535cf3e441be0",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-basic_cmds.git",
+            "revision": "b1ed4f0f6a981590542071d8b36535cf3e441be0",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/bc",
+          "revision": "666e93c8223f509ae9c3c69e3c20af45d49a749c",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-bc.git",
+            "revision": "666e93c8223f509ae9c3c69e3c20af45d49a749c",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/bind9",
+          "revision": "7542d50b3087edb4a46a2bdb11ba75034aa2bffa",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-bind9.git",
+            "revision": "7542d50b3087edb4a46a2bdb11ba75034aa2bffa",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/bmalloc",
+          "revision": "66c88bc0b977ef843a9eaa706d586d9cec2608da",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-bmalloc.git",
+            "revision": "66c88bc0b977ef843a9eaa706d586d9cec2608da",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/bootstrap_cmds",
+          "revision": "0f300a7a04bb1174a3b7db58b57d738aadc14e13",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-bootstrap_cmds.git",
+            "revision": "0f300a7a04bb1174a3b7db58b57d738aadc14e13",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/bsm",
+          "revision": "bec0dd61bb07469d1fcb3985822d350abc9934f7",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-bsm.git",
+            "revision": "bec0dd61bb07469d1fcb3985822d350abc9934f7",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/bzip2",
+          "revision": "dc8c6839093afed1f288715260d32314ad362084",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-bzip2.git",
+            "revision": "dc8c6839093afed1f288715260d32314ad362084",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/cctools",
+          "revision": "8777b6dc7c4de87087c028e17db075795b3684d3",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-cctools.git",
+            "revision": "8777b6dc7c4de87087c028e17db075795b3684d3",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/cctools-port",
+          "revision": "d9456c221e1f462e17c0b3297748bc089d5a861e",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/cctools-port.git",
+            "revision": "d9456c221e1f462e17c0b3297748bc089d5a861e",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/cfnetwork",
+          "revision": "e7e3db881008d883f82914765a72ce842bcba735",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-cfnetwork.git",
+            "revision": "e7e3db881008d883f82914765a72ce842bcba735",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/cocotron",
+          "revision": "c8d38d16a9f613d300157bebbab2b9501bc0c274",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-cocotron.git",
+            "revision": "c8d38d16a9f613d300157bebbab2b9501bc0c274",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/commoncrypto",
+          "revision": "2434540f41a5f94f149cfddd67da244961b716e5",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-commoncrypto.git",
+            "revision": "2434540f41a5f94f149cfddd67da244961b716e5",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/compiler-rt",
+          "revision": "5fd9bc0effa307b99b35da59ce579e8e031c22da",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-compiler-rt.git",
+            "revision": "5fd9bc0effa307b99b35da59ce579e8e031c22da",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/configd",
+          "revision": "98e52de19c52f7938e581ed20385f38abd7fa197",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-configd.git",
+            "revision": "98e52de19c52f7938e581ed20385f38abd7fa197",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/copyfile",
+          "revision": "ed6094c9a2f8ba19aa55b7b504c3665797078e8f",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-copyfile.git",
+            "revision": "ed6094c9a2f8ba19aa55b7b504c3665797078e8f",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/corecrypto",
+          "revision": "875f1cd9e75b0029d872b88ce8a77da276c00c84",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-corecrypto.git",
+            "revision": "875f1cd9e75b0029d872b88ce8a77da276c00c84",
+            "license": "audit-required",
+            "gitlinks": [
+              {
+                "path": "tests/ctest",
+                "revision": "4c49efda86692f5cad36bb32b53be63efcea6664",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/darlinghq/ctest.git",
+                  "revision": "4c49efda86692f5cad36bb32b53be63efcea6664",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "path": "src/external/corefoundation",
+          "revision": "a3640a77410cf1825f7855172b1551ae7917c461",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-corefoundation.git",
+            "revision": "a3640a77410cf1825f7855172b1551ae7917c461",
+            "license": "audit-required",
+            "gitlinks": [
+              {
+                "path": "submodules/swift-corelibs-foundation",
+                "revision": "ea1ea0bb416025a8cc5a282df03c2e8f12788e2d",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/darlinghq/darling-swift-corelibs-foundation.git",
+                  "revision": "ea1ea0bb416025a8cc5a282df03c2e8f12788e2d",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "path": "src/external/coretls",
+          "revision": "b61a4f075726e7d5ef4652033f8d7b829c008d06",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-coretls.git",
+            "revision": "b61a4f075726e7d5ef4652033f8d7b829c008d06",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/crontabs",
+          "revision": "b5bc00d2a75f6c622976e2ebbe244fb2d7d602ea",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-crontabs.git",
+            "revision": "b5bc00d2a75f6c622976e2ebbe244fb2d7d602ea",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/csu",
+          "revision": "93b25cf0930a727b44fa50893bffd71056ad032f",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-Csu.git",
+            "revision": "93b25cf0930a727b44fa50893bffd71056ad032f",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/cups",
+          "revision": "51b7c251ef5ff81adc20284544394de8cc2e1315",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-cups.git",
+            "revision": "51b7c251ef5ff81adc20284544394de8cc2e1315",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/curl",
+          "revision": "92f54fd7eceabed2c2382a4acc0f7293dedd92ff",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-curl.git",
+            "revision": "92f54fd7eceabed2c2382a4acc0f7293dedd92ff",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/darling-dmg",
+          "revision": "1a6de10c5886c40a414090701b2520bd0417ce29",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-dmg.git",
+            "revision": "1a6de10c5886c40a414090701b2520bd0417ce29",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/darlingserver",
+          "revision": "89751e64bc6c2082f7725061824ee0e33395b0de",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darlingserver.git",
+            "revision": "89751e64bc6c2082f7725061824ee0e33395b0de",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/dbuskit",
+          "revision": "890e51fda949e4dd2c46765e39074f790c10ca18",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-dbuskit.git",
+            "revision": "890e51fda949e4dd2c46765e39074f790c10ca18",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/doc_cmds",
+          "revision": "60c6a2b858abe1f27b441f479aad2b0a9d0f9ba2",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-doc_cmds.git",
+            "revision": "60c6a2b858abe1f27b441f479aad2b0a9d0f9ba2",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/dtrace",
+          "revision": "fd2a404c772e8ce1d29f210032e9831fa845f688",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-dtrace.git",
+            "revision": "fd2a404c772e8ce1d29f210032e9831fa845f688",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/dyld",
+          "revision": "63f667cf06d7ed59553adebb0c8d70a117135ac9",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-dyld.git",
+            "revision": "63f667cf06d7ed59553adebb0c8d70a117135ac9",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/energytrace",
+          "revision": "e277fcfd430ddab2d8b52187cf480f2857629104",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-energytrace.git",
+            "revision": "e277fcfd430ddab2d8b52187cf480f2857629104",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/expat",
+          "revision": "70006a0c32d7c8653c11e53fc0c905f1bb498218",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-expat.git",
+            "revision": "70006a0c32d7c8653c11e53fc0c905f1bb498218",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/file",
+          "revision": "c6ee65265d253d24b1a496f8ca54b5e449fe108c",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-file.git",
+            "revision": "c6ee65265d253d24b1a496f8ca54b5e449fe108c",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/file_cmds",
+          "revision": "c0d72b5c98888a9d8e0b73cf8aac0df908e615f2",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-file_cmds.git",
+            "revision": "c0d72b5c98888a9d8e0b73cf8aac0df908e615f2",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/files",
+          "revision": "1c45a50ae0d6ca5bbb8b01d2b588f52bc0e39263",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-files.git",
+            "revision": "1c45a50ae0d6ca5bbb8b01d2b588f52bc0e39263",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/fmdb",
+          "revision": "ad2fdd660d02c24b262d64d7d23d3d4645768f44",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/fmdb.git",
+            "revision": "ad2fdd660d02c24b262d64d7d23d3d4645768f44",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/foundation",
+          "revision": "55a4341b470c2a56fea667c1d2167fb074226f04",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-foundation.git",
+            "revision": "55a4341b470c2a56fea667c1d2167fb074226f04",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/glut",
+          "revision": "b53a2d8f0c6dc0c2052aef410a120d14ee553056",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-glut.git",
+            "revision": "b53a2d8f0c6dc0c2052aef410a120d14ee553056",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/gnudiff",
+          "revision": "ae0ab716658296164a032be7406f082cdc31c954",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-gnudiff.git",
+            "revision": "ae0ab716658296164a032be7406f082cdc31c954",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/gnutar",
+          "revision": "1414bc8a8bd2e9dae701831e749febe2e2e84d68",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-gnutar.git",
+            "revision": "1414bc8a8bd2e9dae701831e749febe2e2e84d68",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/gpatch",
+          "revision": "49acc897e8cb832a26b7ac4d2f7db51d3c6ba037",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-gpatch.git",
+            "revision": "49acc897e8cb832a26b7ac4d2f7db51d3c6ba037",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/grep",
+          "revision": "62d70fada3a01de87aff927a86b8df0f7f2a837a",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-grep.git",
+            "revision": "62d70fada3a01de87aff927a86b8df0f7f2a837a",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/groff",
+          "revision": "10dd5a6be4915a99065bc15dfc6b6b1e9e1a2714",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-groff.git",
+            "revision": "10dd5a6be4915a99065bc15dfc6b6b1e9e1a2714",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/icu",
+          "revision": "6b609b2b0ce9a620543f357de4e549f09afec4ea",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-icu.git",
+            "revision": "6b609b2b0ce9a620543f357de4e549f09afec4ea",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/installer",
+          "revision": "88764e6149f92f1747442c27ab00231f40de278c",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-installer.git",
+            "revision": "88764e6149f92f1747442c27ab00231f40de278c",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/iokitd",
+          "revision": "5549ac4cd2db923c256f016a1381b3bfb716730a",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-iokitd.git",
+            "revision": "5549ac4cd2db923c256f016a1381b3bfb716730a",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/keymgr",
+          "revision": "43b4230aec2e9018b0ffd3069b8b23a34ba257fb",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-keymgr.git",
+            "revision": "43b4230aec2e9018b0ffd3069b8b23a34ba257fb",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/less",
+          "revision": "a6bc77c8e72aaa35da92b903172a70eaa4ef78fa",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-less.git",
+            "revision": "a6bc77c8e72aaa35da92b903172a70eaa4ef78fa",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libarchive",
+          "revision": "998d739c602a1b35e2377ec9161e9c13d1d8604d",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libarchive.git",
+            "revision": "998d739c602a1b35e2377ec9161e9c13d1d8604d",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libauto",
+          "revision": "2be7312b25736a8e9fc12058d63cbb79eb5f4e25",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libauto.git",
+            "revision": "2be7312b25736a8e9fc12058d63cbb79eb5f4e25",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libc",
+          "revision": "5a38c8dabf9e76b39407c24bc13134e33e5594e6",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-Libc.git",
+            "revision": "5a38c8dabf9e76b39407c24bc13134e33e5594e6",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libclosure",
+          "revision": "b4122f19c89512d9e930259a85c5f2674eff2b2b",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libclosure.git",
+            "revision": "b4122f19c89512d9e930259a85c5f2674eff2b2b",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libcxx",
+          "revision": "c47677d3ba33bdabbfb07e75f531831579355a2d",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libcxx.git",
+            "revision": "c47677d3ba33bdabbfb07e75f531831579355a2d",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libcxxabi",
+          "revision": "c9c851718eb304a9aefa097aeaaf8c3bd1dff1bc",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libcxxabi.git",
+            "revision": "c9c851718eb304a9aefa097aeaaf8c3bd1dff1bc",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libdispatch",
+          "revision": "380f03c180b80d940134fb35783ddc714784a53a",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libdispatch.git",
+            "revision": "380f03c180b80d940134fb35783ddc714784a53a",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libedit",
+          "revision": "f9b44b8541614e33b09451fc2847f7e30bfb9b70",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libedit.git",
+            "revision": "f9b44b8541614e33b09451fc2847f7e30bfb9b70",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libffi",
+          "revision": "c796ec121cfd950aa5cc901ea47854a8431948ac",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libffi.git",
+            "revision": "c796ec121cfd950aa5cc901ea47854a8431948ac",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libiconv",
+          "revision": "0d6f47d33a7cc97e468e864099fff74875b41937",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libiconv.git",
+            "revision": "0d6f47d33a7cc97e468e864099fff74875b41937",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libkqueue",
+          "revision": "b0795a2e1dab5331116770139bfea8d832478f5f",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libkqueue.git",
+            "revision": "b0795a2e1dab5331116770139bfea8d832478f5f",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/liblzma",
+          "revision": "855ebc93f8208ae4b6e77a018d4ba4a4be4d2ab7",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-liblzma.git",
+            "revision": "855ebc93f8208ae4b6e77a018d4ba4a4be4d2ab7",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libmalloc",
+          "revision": "a57991e2651226a675654bd96e5d9ab6bec288c5",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libmalloc.git",
+            "revision": "a57991e2651226a675654bd96e5d9ab6bec288c5",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libnetwork",
+          "revision": "56c5fad43f24a40d8ca7f8a1d0badedfeaf7e64e",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libnetwork.git",
+            "revision": "56c5fad43f24a40d8ca7f8a1d0badedfeaf7e64e",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libnotify",
+          "revision": "98156d3f847a3ced6c5f52c12a889047bc4f9b20",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-Libnotify.git",
+            "revision": "98156d3f847a3ced6c5f52c12a889047bc4f9b20",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libplatform",
+          "revision": "5a3e5b529d25c70257dcfa97e94f1826e71e9f40",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libplatform.git",
+            "revision": "5a3e5b529d25c70257dcfa97e94f1826e71e9f40",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libpthread",
+          "revision": "f07f265bfbcf071c1adfc808de971e053ea5edc5",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libpthread.git",
+            "revision": "f07f265bfbcf071c1adfc808de971e053ea5edc5",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libresolv",
+          "revision": "cf955392e5449efb269b8b3510c755085fd36a2d",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libresolv.git",
+            "revision": "cf955392e5449efb269b8b3510c755085fd36a2d",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libressl-2.2.9",
+          "revision": "c5e9edb9d82ccf5fde5d8ae32b162fec8fe11318",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libressl.git",
+            "revision": "c5e9edb9d82ccf5fde5d8ae32b162fec8fe11318",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libressl-2.5.5",
+          "revision": "1f663b5bdc9082178717c080e4728fe3e7084de4",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libressl.git",
+            "revision": "1f663b5bdc9082178717c080e4728fe3e7084de4",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libressl-2.6.5",
+          "revision": "30826df38d7c0f416158a94e0112c928188e0327",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libressl.git",
+            "revision": "30826df38d7c0f416158a94e0112c928188e0327",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libressl-2.8.3",
+          "revision": "2a56b36b77a00573c53ccd8e6932eb136172c950",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libressl.git",
+            "revision": "2a56b36b77a00573c53ccd8e6932eb136172c950",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/librpcsvc",
+          "revision": "0cc1d42e53c61446616719597e96b29aeda51eb3",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-librpcsvc.git",
+            "revision": "0cc1d42e53c61446616719597e96b29aeda51eb3",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libstdcxx",
+          "revision": "73eb757fe23170c372bef17d6de41787c1271c80",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libstdcxx.git",
+            "revision": "73eb757fe23170c372bef17d6de41787c1271c80",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libsystem",
+          "revision": "08df454b6eb0df9400aa4c39839a7efd6efd2c3c",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-Libsystem.git",
+            "revision": "08df454b6eb0df9400aa4c39839a7efd6efd2c3c",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libtelnet",
+          "revision": "1ebd4eef48d06e6411ed2a0f60ba5d3fce5ab455",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libtelnet.git",
+            "revision": "1ebd4eef48d06e6411ed2a0f60ba5d3fce5ab455",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libtrace",
+          "revision": "8cf07f02b15f7dca6436882a03678fff0392eaf6",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libtrace.git",
+            "revision": "8cf07f02b15f7dca6436882a03678fff0392eaf6",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libunwind",
+          "revision": "a91da1a0e262e04eb601152a84228ff733e48422",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libunwind.git",
+            "revision": "a91da1a0e262e04eb601152a84228ff733e48422",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libutil",
+          "revision": "e3782a467c248c8d181aba1200ee0642abb65baf",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libutil.git",
+            "revision": "e3782a467c248c8d181aba1200ee0642abb65baf",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libxml2",
+          "revision": "d4f2967c8ca84a23a886978098c0520fe2963b92",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libxml2.git",
+            "revision": "d4f2967c8ca84a23a886978098c0520fe2963b92",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/libxpc",
+          "revision": "394e033333d3c253a12f08a99090c113b0917d00",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libxpc.git",
+            "revision": "394e033333d3c253a12f08a99090c113b0917d00",
+            "license": "audit-required",
+            "gitlinks": [
+              {
+                "path": "test/ctest",
+                "revision": "cd46041baf3f131fe74032967566c7321adcaa01",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/bvdberg/ctest.git",
+                  "revision": "cd46041baf3f131fe74032967566c7321adcaa01",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "path": "src/external/libxslt",
+          "revision": "50d22bd5b761a1885009b690e48d858ff73e768b",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-libxslt.git",
+            "revision": "50d22bd5b761a1885009b690e48d858ff73e768b",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/lzfse",
+          "revision": "451f291743bb919cb1b78ced4110402fca52cf97",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/lzfse.git",
+            "revision": "451f291743bb919cb1b78ced4110402fca52cf97",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/mDNSResponder",
+          "revision": "7e38ef562b4f3d41bffabb3e30d844d8042d3bbd",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-mDNSResponder.git",
+            "revision": "7e38ef562b4f3d41bffabb3e30d844d8042d3bbd",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/mail_cmds",
+          "revision": "4afbcf4b9b8a6c33acaf7e9025e51ce72b3725a7",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-mail_cmds.git",
+            "revision": "4afbcf4b9b8a6c33acaf7e9025e51ce72b3725a7",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/man",
+          "revision": "9af6690f3c7c3c713bb0a20ba1163d3c4278257d",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-man.git",
+            "revision": "9af6690f3c7c3c713bb0a20ba1163d3c4278257d",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/metal",
+          "revision": "ae20248dc144beab899e38752f5a530f28a0ea56",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-metal.git",
+            "revision": "ae20248dc144beab899e38752f5a530f28a0ea56",
+            "license": "audit-required",
+            "gitlinks": [
+              {
+                "path": "deps/indium",
+                "revision": "8423a7d2f053167030d2bc4a227f96243c740667",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/darlinghq/indium.git",
+                  "revision": "8423a7d2f053167030d2bc4a227f96243c740667",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "path": "src/external/misc_cmds",
+          "revision": "85b24ec0e2625d75e7ee75b597b9134a49d18b1f",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-misc_cmds.git",
+            "revision": "85b24ec0e2625d75e7ee75b597b9134a49d18b1f",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/nano",
+          "revision": "7514f5f1115fffedd8fc2095107ca86ff82c54d6",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-nano.git",
+            "revision": "7514f5f1115fffedd8fc2095107ca86ff82c54d6",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/ncurses",
+          "revision": "4cc72a9a1bce214593c10811b0154a8d51db0239",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-ncurses.git",
+            "revision": "4cc72a9a1bce214593c10811b0154a8d51db0239",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/netcat",
+          "revision": "fd29177d56d84f88406e33784c327ebabfe7be58",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-netcat.git",
+            "revision": "fd29177d56d84f88406e33784c327ebabfe7be58",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/network_cmds",
+          "revision": "9a0a90e2021ecdde91986b91f65a236eda158023",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-network_cmds.git",
+            "revision": "9a0a90e2021ecdde91986b91f65a236eda158023",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/nghttp2",
+          "revision": "1a1853837b4350d4393bd25e1e4cb6018ab2d918",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-nghttp2.git",
+            "revision": "1a1853837b4350d4393bd25e1e4cb6018ab2d918",
+            "license": "audit-required",
+            "gitlinks": [
+              {
+                "path": "third-party/mruby",
+                "revision": "7c91efc1ffda769a5f1a872c646c82b00698f1b8",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/mruby/mruby",
+                  "revision": "7c91efc1ffda769a5f1a872c646c82b00698f1b8",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              },
+              {
+                "path": "third-party/neverbleed",
+                "revision": "b967ca054f48a36f82d8fcdd32e54ec5144f2751",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/tatsuhiro-t/neverbleed.git",
+                  "revision": "b967ca054f48a36f82d8fcdd32e54ec5144f2751",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "path": "src/external/objc4",
+          "revision": "1a12df76d12bfc9fdfffadb290f7742763568765",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-objc4.git",
+            "revision": "1a12df76d12bfc9fdfffadb290f7742763568765",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/openjdk",
+          "revision": "5a541c1844a9508e48b3addaf2d38775683abb38",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/openjdk.git",
+            "revision": "5a541c1844a9508e48b3addaf2d38775683abb38",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/openpam",
+          "revision": "8362545bac04032fcf59287cd66e6f4662a3692b",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-openpam.git",
+            "revision": "8362545bac04032fcf59287cd66e6f4662a3692b",
+            "license": "audit-required",
+            "gitlinks": [
+              {
+                "path": "darling/submodules/pam_modules",
+                "revision": "241bbee0da845d1dfebc747b16a62aaed22f165b",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/darlinghq/darling-pam_modules.git",
+                  "revision": "241bbee0da845d1dfebc747b16a62aaed22f165b",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "path": "src/external/openssh",
+          "revision": "9137305e5793d31124bcf2fdf0c6fa28c2e3e812",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-openssh.git",
+            "revision": "9137305e5793d31124bcf2fdf0c6fa28c2e3e812",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/openssl",
+          "revision": "dc7bf84efa5a0befa0d970d4d5177853ac448d6f",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-openssl.git",
+            "revision": "dc7bf84efa5a0befa0d970d4d5177853ac448d6f",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/openssl_certificates",
+          "revision": "cca4f47e3ca18b58961157ef0ec6a6fc135b8cd2",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-openssl_certificates.git",
+            "revision": "cca4f47e3ca18b58961157ef0ec6a6fc135b8cd2",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/passwordserver_sasl",
+          "revision": "45019fa25adf5ad5713d9e39df3b72e420dccc96",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-passwordserver_sasl.git",
+            "revision": "45019fa25adf5ad5713d9e39df3b72e420dccc96",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/patch_cmds",
+          "revision": "0670c7fbadfd715ac78d5476552788416cad0020",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-patch_cmds.git",
+            "revision": "0670c7fbadfd715ac78d5476552788416cad0020",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/pcre",
+          "revision": "6f67e33869a2b08da9465034c41e64e16fc7faf9",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-pcre.git",
+            "revision": "6f67e33869a2b08da9465034c41e64e16fc7faf9",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/perl",
+          "revision": "a65d68be2146d85928e511aabc8f3a2b05e564ba",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-perl.git",
+            "revision": "a65d68be2146d85928e511aabc8f3a2b05e564ba",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/pyobjc",
+          "revision": "d1a7440efe1c1090b256273ae91831186f7afde4",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-pyobjc.git",
+            "revision": "d1a7440efe1c1090b256273ae91831186f7afde4",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/python",
+          "revision": "4856509729cc320006a1235291e47408cd7b13ce",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-python.git",
+            "revision": "4856509729cc320006a1235291e47408cd7b13ce",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/python_modules",
+          "revision": "24d01b41cb38fafc810cdd27562224c4014a4761",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-python_modules.git",
+            "revision": "24d01b41cb38fafc810cdd27562224c4014a4761",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/remote_cmds",
+          "revision": "3bb9f88724726d0d3073c04dfdc4785564113341",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-remote_cmds.git",
+            "revision": "3bb9f88724726d0d3073c04dfdc4785564113341",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/removefile",
+          "revision": "3cd493871f27130f9cf64c31daab9cca2ee17726",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-removefile.git",
+            "revision": "3cd493871f27130f9cf64c31daab9cca2ee17726",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/rsync",
+          "revision": "316c5b6b2780a28179f692f3fc0d63ebc2985705",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-rsync.git",
+            "revision": "316c5b6b2780a28179f692f3fc0d63ebc2985705",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/ruby",
+          "revision": "423f2439478d2e24d7c19b2e0ea4a67ee3e80c3d",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-ruby.git",
+            "revision": "423f2439478d2e24d7c19b2e0ea4a67ee3e80c3d",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/screen",
+          "revision": "4bed52587563ede850bf9ff834567478ac1e616b",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-screen.git",
+            "revision": "4bed52587563ede850bf9ff834567478ac1e616b",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/security",
+          "revision": "3cfffcf2c5b5900169c964facdf42cc05c23005c",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-security.git",
+            "revision": "3cfffcf2c5b5900169c964facdf42cc05c23005c",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/shell_cmds",
+          "revision": "5191dabbeff0aec230fc1275bae1653281ba52b2",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-shell_cmds.git",
+            "revision": "5191dabbeff0aec230fc1275bae1653281ba52b2",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/sqlite",
+          "revision": "3472e2568cb7fcc25fe91af80da8d2fe884d9ac0",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-sqlite.git",
+            "revision": "3472e2568cb7fcc25fe91af80da8d2fe884d9ac0",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/swift",
+          "revision": "471514f4b4985a604b192e1facac9bbc53dedad3",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-swift.git",
+            "revision": "471514f4b4985a604b192e1facac9bbc53dedad3",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/syslog",
+          "revision": "36ab27964cac4affe3907a598047bd21b8958919",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-syslog.git",
+            "revision": "36ab27964cac4affe3907a598047bd21b8958919",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/system_cmds",
+          "revision": "b01129f3dc0ecab524dbd0fd08e29ec9f0e18196",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-system_cmds.git",
+            "revision": "b01129f3dc0ecab524dbd0fd08e29ec9f0e18196",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/tcsh",
+          "revision": "7737644ec31303be19c533aab093209f3458e060",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-tcsh.git",
+            "revision": "7737644ec31303be19c533aab093209f3458e060",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/text_cmds",
+          "revision": "3edd740c82b8b87c17ec9cfaae7606f6176626df",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-text_cmds.git",
+            "revision": "3edd740c82b8b87c17ec9cfaae7606f6176626df",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/top",
+          "revision": "4e27f81b5cfeef9d31d8fe5d938a80d26cca9ab5",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-top.git",
+            "revision": "4e27f81b5cfeef9d31d8fe5d938a80d26cca9ab5",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/usertemplate",
+          "revision": "5f8cca97aa03ff9290d6ccc0a4d185aa1a913875",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-usertemplate.git",
+            "revision": "5f8cca97aa03ff9290d6ccc0a4d185aa1a913875",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/vim",
+          "revision": "7f8da1dd66fc8f0654ebfa597b6013c8cf15185a",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-vim.git",
+            "revision": "7f8da1dd66fc8f0654ebfa597b6013c8cf15185a",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/xar",
+          "revision": "887bd4f42eb4ac9139a7f621b5811065aa86f3e3",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-xar.git",
+            "revision": "887bd4f42eb4ac9139a7f621b5811065aa86f3e3",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/xcbuild",
+          "revision": "a903c6952fc5617816113cbb7b551ac701dba2ff",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/xcbuild.git",
+            "revision": "a903c6952fc5617816113cbb7b551ac701dba2ff",
+            "license": "audit-required",
+            "gitlinks": [
+              {
+                "path": "ThirdParty/googletest",
+                "revision": "a2b8a8e07628e5fd60644b6dd99c1b5e7d7f1f47",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/google/googletest.git",
+                  "revision": "a2b8a8e07628e5fd60644b6dd99c1b5e7d7f1f47",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              },
+              {
+                "path": "ThirdParty/linenoise",
+                "revision": "c894b9e59f02203dbe4e2be657572cf88c4230c3",
+                "initialized": true,
+                "source": {
+                  "url": "https://github.com/antirez/linenoise.git",
+                  "revision": "c894b9e59f02203dbe4e2be657572cf88c4230c3",
+                  "license": "audit-required",
+                  "gitlinks": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "path": "src/external/xnu",
+          "revision": "fa29287aa2f0115271e091f1031f53c9e024005d",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-xnu.git",
+            "revision": "fa29287aa2f0115271e091f1031f53c9e024005d",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/zip",
+          "revision": "caf41ebbc3ebab0250e4d13aa42221ef91a9802c",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-zip.git",
+            "revision": "caf41ebbc3ebab0250e4d13aa42221ef91a9802c",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/zlib",
+          "revision": "677de9b1c2bea1e428f56d8fc63300aa471eaf99",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-zlib.git",
+            "revision": "677de9b1c2bea1e428f56d8fc63300aa471eaf99",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        },
+        {
+          "path": "src/external/zsh",
+          "revision": "4a7a6ebf6216395c7db698a4993db16e484aa54d",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/darling-zsh.git",
+            "revision": "4a7a6ebf6216395c7db698a4993db16e484aa54d",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/darlinghq/darling-metal.git",
+      "revision": "ae20248dc144beab899e38752f5a530f28a0ea56",
+      "license": "MPL-2.0",
+      "gitlinks": [
+        {
+          "path": "deps/indium",
+          "revision": "8423a7d2f053167030d2bc4a227f96243c740667",
+          "initialized": true,
+          "source": {
+            "url": "https://github.com/darlinghq/indium.git",
+            "revision": "8423a7d2f053167030d2bc4a227f96243c740667",
+            "license": "audit-required",
+            "gitlinks": []
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/darlinghq/indium.git",
+      "revision": "8423a7d2f053167030d2bc4a227f96243c740667",
+      "license": "0BSD",
+      "gitlinks": []
+    }
+  ],
+  "json": {
+    "version": "3.11.3",
+    "license": "MIT",
+    "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6",
+    "url": "https://raw.githubusercontent.com/nlohmann/json/v3.11.3/single_include/nlohmann/json.hpp"
+  }
+}

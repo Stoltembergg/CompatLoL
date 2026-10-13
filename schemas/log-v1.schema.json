@@ -1,0 +1,13 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"LogV1","type":"object","additionalProperties":false,
+ "required":["schema_version","run_id","monotonic_ns","pid","tid","component","severity","code","message","fields"],
+ "properties":{
+  "schema_version":{"const":1},
+  "run_id":{"type":"string","pattern":"^([a-f0-9]{32}|unavailable)$"},
+  "monotonic_ns":{"type":"integer","minimum":0},
+  "pid":{"type":"integer","minimum":1},"tid":{"type":"integer","minimum":0},
+  "component":{"type":"string"},"severity":{"enum":["debug","info","warning","error"]},
+  "code":{"type":"string"},"message":{"type":"string"},"fields":{"type":"object"}
+ }
+}

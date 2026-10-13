@@ -1,0 +1,21 @@
+name: host-contracts
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  host:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-24.04, macos-15-intel]
+        preset: [debug, sanitizer]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Configure
+        run: cmake --preset ${{ matrix.preset }}
+      - name: Build
+        run: cmake --build --preset ${{ matrix.preset }}
+      - name: Host checks only
+        run: ctest --preset ${{ matrix.preset }}
+# No proprietary inputs, artifact uploads, privileged or self-hosted runners.
+# Runner images remain GitHub-managed; no reproducible image digest is claimed.

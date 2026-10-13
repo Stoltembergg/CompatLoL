@@ -1,0 +1,10 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"InventoryV1","type":"object","additionalProperties":false,
+ "required":["schema_version","bundle_version","binaries","requirements"],
+ "properties":{
+  "schema_version":{"const":1},"bundle_version":{"type":["string","null"]},
+  "binaries":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["relative_path","sha256","slices"],"properties":{"relative_path":{"type":"string"},"sha256":{"type":"string","pattern":"^[a-f0-9]{64}$"},"slices":{"type":"array","items":{"type":"object","required":["arch","uuid","min_os","dylibs","rpaths","imports","load_commands","objc_metadata"],"properties":{"arch":{"enum":["x86_64","arm64","i386","unknown"]},"uuid":{"type":["string","null"]},"min_os":{"type":["string","null"]},"dylibs":{"type":"array","items":{"type":"object","required":["name","weak"],"properties":{"name":{"type":"string"},"weak":{"type":"boolean"}}}},"rpaths":{"type":"array","items":{"type":"string"}},"imports":{"type":"array","items":{"type":"string"}},"load_commands":{"type":"array","items":{"type":"integer"}},"objc_metadata":{"const":"not-inspected"}}}}}}},
+  "requirements":{"type":"array","items":{"type":"object","required":["component","api","state","evidence_refs","blocker"],"properties":{"component":{"enum":["launcher","client","game","anticheat","unknown"]},"api":{"type":"string"},"state":{"enum":["confirmed","hypothesis","unknown","not-observed"]},"evidence_refs":{"type":"array","items":{"type":"string"}},"blocker":{"type":["string","null"]}}}}
+ }
+}

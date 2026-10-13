@@ -1,0 +1,64 @@
+name: standalone-indium-audit
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        llvm: [14, 18]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Install explicit development dependencies (disposable runner only)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential cmake ninja-build clang-18 \
+            llvm-14 llvm-14-dev llvm-18 llvm-18-dev libvulkan-dev libglfw3-dev \
+            libglm-dev xxd spirv-tools python3 git libssl-dev
+      - name: Verify host and harness contracts
+        run: |
+          cmake --preset debug
+          cmake --build --preset debug
+          ctest --preset debug
+      - name: Pinned recursive sources
+        run: sh tools/bootstrap.sh
+      - name: Audit one LLVM candidate (no GPU or Darling launch)
+        run: |
+          python3 tools/audit_linux.py run --llvm-major ${{ matrix.llvm }} \
+            --config config/audit-linux.json \
+            --out-dir .work/results/ci-llvm-${{ matrix.llvm }}
+      - name: Stage evidence from public-source audit (even on failure)
+        if: always()
+        env:
+          AUDIT_RESULT: .work/results/ci-llvm-${{ matrix.llvm }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path(os.environ['AUDIT_RESULT']).resolve()
+          report = root / 'report.json'
+          if not report.is_file():
+              print('No audit report: a preceding setup/host/source step did not complete.')
+          else:
+              data = json.loads(report.read_text())
+              print(json.dumps(data, indent=2))
+              for candidate in data['candidates']:
+                  for phase in candidate['phases']:
+                      if phase['status'] != 'failed':
+                          continue
+                      for key in ('stdout_path', 'stderr_path'):
+                          if not phase.get(key):
+                              continue
+                          log = (root / phase[key]).resolve()
+                          if log.is_relative_to(root) and log.is_file():
+                              with log.open('rb') as handle:
+                                  handle.seek(max(0, log.stat().st_size - 4000))
+                                  print(phase['name'], key, handle.read().decode('utf-8', errors='replace'))
+          PY
+# No self-hosted runners, proprietary inputs, cache/artifact uploads, driver setup,
+# Darling install, setcap, SDKs or connected Riot sessions. Runner packages are
+# recorded at run time, not represented as a frozen OS image. build-only returns 2.

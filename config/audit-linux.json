@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "os_id": "ubuntu",
+  "os_version": "24.04",
+  "arch": "x86_64",
+  "llvm_candidates": [14, 18],
+  "compiler_major": 18,
+  "jobs": 2,
+  "configure_timeout_seconds": 300,
+  "build_timeout_seconds": 3600,
+  "probe_timeout_seconds": 30,
+  "translation_timeout_seconds": 30,
+  "max_output_bytes": 16777216,
+  "enable_upstream_test_targets": true,
+  "execute_gpu": false
+}

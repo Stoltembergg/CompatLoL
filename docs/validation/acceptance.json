@@ -1,0 +1,46 @@
+{
+ "schema_version":1,
+ "end_to_end_complete":false,
+ "host":"Darwin x86_64",
+ "criteria":[
+  {"id":"AC01","todoIds":["T01"],"status":"pending","reason":"Local Git, license, docs, pinned sources present; publication blocked; governance/license audit incomplete"},
+  {"id":"AC02","todoIds":["T02"],"status":"pending","reason":"All three clones recursive; LLVM symbol/source inventory and fixture hashes documented; Linux standalone harness/probe prepared; exhaustive framework audit and Linux builds pending"},
+  {"id":"AC03","todoIds":["T02","T03"],"status":"pending","reason":"Four-axis viability gate documented; evidence schema/runtime contracts incomplete"},
+  {"id":"AC04","todoIds":["T03"],"status":"pending","reason":"Parser, read-only output regression, CPUID diagnostics, structured log and refusal tested; ObjC metadata, bundle version, full policy/Vulkan/audio capabilities pending"},
+  {"id":"AC05","todoIds":["T04"],"status":"blocked","reason":"No Linux Darling execution; native macOS fixture is not Darling evidence"},
+  {"id":"AC06","todoIds":["T05"],"status":"blocked","reason":"Missing Vulkan and validated Linux/GPU environment"},
+  {"id":"AC07","todoIds":["T06"],"status":"blocked","reason":"Depends on validated runtime/Metal presentation; complex fixture not implemented"},
+  {"id":"AC08","todoIds":["T07"],"status":"pending","reason":"Host and manual standalone-audit workflows prepared; eight local CTest checks including Python harness pass; remote CI, GPU matrix and benchmarks pending"},
+  {"id":"AC09","todoIds":["T08"],"status":"blocked","reason":"No legal approval, lawful installation or Riot experiments"},
+  {"id":"AC10","todoIds":["T09"],"status":"blocked","reason":"mVG policy documented; all launch refused; no authorized connected session"}
+ ],
+ "evidence":[
+  {"id":"E01","kind":"test","label":"Historical seven CTest host checks debug","status":"passed","run_id":"7a7a9444-a963-4428-aa40-9898a41bd03f"},
+  {"id":"E02","kind":"test","label":"Historical seven CTest host checks ASan/UBSan","status":"passed","run_id":"7a7a9444-a963-4428-aa40-9898a41bd03f"},
+  {"id":"E03","kind":"build","label":"Indium configuration: Vulkan not found","status":"failed","run_id":"0f00a483-ed89-413d-8a3e-1af6a7846b21","path":".work/results/indium-configure.log"},
+  {"id":"E04","kind":"build","label":"Darling configuration: Setcap not found","status":"failed","run_id":"0f00a483-ed89-413d-8a3e-1af6a7846b21","path":".work/results/darling-configure.log"},
+  {"id":"E05","kind":"source","label":"Recursive pinned source checkouts completed","status":"observed","run_id":"677a91c9-094d-4358-bfb9-3263321c3001","path":"third_party/sources.lock.json"},
+  {"id":"E06","kind":"test","label":"Eight CTest checks debug, including 21 harness regressions","status":"passed","run_id":"588ab1c5-7451-47dd-a304-cab73b8ec8d4","path":".work/results/llvm-harness-debug.log"},
+  {"id":"E07","kind":"test","label":"Eight CTest checks sanitizer preset; Python/probe are not sanitizer-instrumented","status":"passed","run_id":"588ab1c5-7451-47dd-a304-cab73b8ec8d4","path":".work/results/llvm-harness-sanitizer.log"},
+  {"id":"E08","kind":"runtime","label":"Linux preflight honestly blocked on Darwin, exit 2","status":"blocked","run_id":"c635dcbd-b892-48d5-b301-bf32463c47d5","path":".work/results/llvm-preflight-macos-001/report.json"},
+  {"id":"E09","kind":"runtime","label":"LLVM matrix blocked on Darwin before subprocesses, exit 2","status":"blocked","run_id":"6b679678-3cde-4dcf-a882-e89bce69fa59","path":".work/results/llvm-matrix-macos-001/report.json"},
+  {"id":"E10","kind":"source","label":"Static declared LLVM references and unapproved fixture hashes","status":"observed","run_id":"ad226cba-79fb-4273-81d1-36868b671a19","revision":"8423a7d2f053167030d2bc4a227f96243c740667","path":"docs/audit/iridium-source-inventory.json"},
+  {"id":"E11","kind":"test","label":"Eight CTest checks debug, including 24 harness regressions","status":"passed","run_id":"4888d9e1-b7b5-4abb-89cc-b8f4dee55e91","path":".work/results/approved-plan-verify-002/debug.log"},
+  {"id":"E12","kind":"test","label":"Eight CTest checks sanitizer preset; Python and Linux probe not instrumented","status":"passed","run_id":"4888d9e1-b7b5-4abb-89cc-b8f4dee55e91","path":".work/results/approved-plan-verify-002/sanitizer.log"},
+  {"id":"E13","kind":"runtime","label":"Fresh Darwin preflight refused, exit 2","status":"blocked","run_id":"297783ce-9270-4385-aebc-ec8479c0c829","path":".work/results/llvm-preflight-macos-002/report.json"},
+  {"id":"E14","kind":"runtime","label":"Fresh Darwin matrix refused with no Linux subprocesses, exit 2","status":"blocked","run_id":"2581a3db-4e89-450b-beb3-3ecda46a0e30","path":".work/results/llvm-matrix-macos-002/report.json"},
+  {"id":"E15","kind":"source","label":"Pinned clean Indium checkout; regenerated symbol/fixture inventory matches documented inventory","status":"observed","run_id":"e98686f2-bb28-4b6f-a592-eb22975683df","revision":"8423a7d2f053167030d2bc4a227f96243c740667","path":".work/results/iridium-source-recheck-002.json"}
+ ],
+ "llvm_audit_delivery":{
+  "linux_experiments_executed":false,
+  "baseline_llvm_major":null,
+  "criteria":[
+   {"id":"A1","status":"passed","evidenceIds":["E10","E15"],"reason":"Static symbol references, dynamic-library contract and risks documented; regenerated inventory matches clean pinned sources; fixture provenance explicitly pending"},
+   {"id":"A2","status":"passed","evidenceIds":["E11","E13","E14"],"reason":"Fresh macOS refusal observed; missing tools/source revisions/LLVM major refusal regressions passed"},
+   {"id":"A3","status":"passed","evidenceIds":["E11"],"reason":"Synthetic-runner regressions verify separate build trees/PATH/LLVM_DIR and require all stages plus validated fixtures, not a passed label, to select baseline; this is not a Linux experiment"},
+   {"id":"A4","status":"blocked","evidenceIds":["E11","E14"],"reason":"Artifact/probe-contract/timeouts and corrupt-report cases covered by host tests; real C++ probe not built or executed on Linux"},
+   {"id":"A5","status":"passed","evidenceIds":["E11","E12"],"reason":"Existing debug/sanitizer presets passed host/harness tests; no actual Linux result is claimed"},
+   {"id":"A6","status":"passed","evidenceIds":["E13","E14"],"reason":"Reports and documentation distinguish prepared/skipped/blocked from executed stages; remote workflow, Linux, GPU and Riot are explicitly unexecuted"}
+  ]
+ }
+}

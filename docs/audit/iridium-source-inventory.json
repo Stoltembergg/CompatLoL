@@ -1,0 +1,1254 @@
+{
+  "schema_version": 1,
+  "symbol_declaration": "private-include/iridium/dynamic-llvm.hpp",
+  "symbols": [
+    {
+      "name": "LLVMBasicBlockAsValue",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1392
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1393
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1414
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1429
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMConstIntGetSExtValue",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 596
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 597
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 655
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 656
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 735
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 736
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 820
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 821
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMConstIntGetZExtValue",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 171
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 860
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMConstRealGetDouble",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 179
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMCountIncoming",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1426
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMCountParamTypes",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 76
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 430
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMCountStructElementTypes",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 86
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMCreateMemoryBufferWithMemoryRange",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 19
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMDisposeMemoryBuffer",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 19
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMDisposeMessage",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 269
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMDisposeModule",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 31
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetAlignment",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1099
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1122
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetArrayLength",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 140
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetCalledValue",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1134
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetCondition",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1391
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetConstOpcode",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 233
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetElementAsConstant",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 216
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetElementType",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 127
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 131
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 138
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 428
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 522
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetFCmpPredicate",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1367
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetFirstBasicBlock",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 941
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 971
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1023
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetFirstInstruction",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1033
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetFirstNamedMetadata",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 273
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetIncomingBlock",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1429
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetIncomingValue",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1428
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetIndices",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1284
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1298
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetInitializer",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 859
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetInstructionOpcode",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 973
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 984
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 985
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1034
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetIntTypeWidth",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 71
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 172
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetLastInstruction",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 972
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 982
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 983
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetMaskValue",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1268
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetMDNodeNumOperands",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 346
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 375
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 417
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 433
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 442
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 480
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 495
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 516
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 565
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 702
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 797
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 856
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetMDNodeOperands",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 347
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 376
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 418
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 434
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 443
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 481
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 496
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 517
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 566
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 703
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 798
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 857
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetMDString",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 151
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNamedFunction",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 33
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNamedMetadata",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 302
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 348
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 377
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 849
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNamedMetadataNumOperands",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 340
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 369
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 411
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 851
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNamedMetadataOperands",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 341
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 370
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 412
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 852
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNextBasicBlock",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 941
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 971
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1023
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNextInstruction",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1033
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNumContainedTypes",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1341
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNumIndices",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1285
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1299
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNumMaskElements",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1265
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetNumOperands",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1056
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1333
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetOperand",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 203
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 235
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1038
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1052
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1059
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1100
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1123
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1124
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1149
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1153
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1154
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1155
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1156
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1157
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1158
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1159
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1160
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1161
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1196
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1200
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1201
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1205
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1209
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1213
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1214
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1218
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1222
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1223
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1238
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1239
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1260
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1261
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1279
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1280
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1294
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1308
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1309
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1310
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1321
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1322
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1334
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1365
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1366
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1440
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1459
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetParam",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 569
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 783
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 837
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetParamTypes",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 77
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 431
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetPointerAddressSpace",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 126
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetReturnType",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 74
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 429
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetSuccessor",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 979
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 980
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 992
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1000
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1392
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1393
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1414
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetTypeKind",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 49
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 160
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 436
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 469
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1340
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetUndefMaskElem",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1269
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetValueKind",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 158
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetValueName2",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1138
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMGetVectorSize",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 133
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 200
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 213
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMIsAMDString",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 582
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 641
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 713
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 806
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMIsConditional",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 977
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 990
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 998
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1390
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMIsPackedStruct",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 91
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMParseBitcode2",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 26
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMPrintModuleToString",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 267
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMStructGetTypeAtIndex",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 94
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 108
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 460
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1344
+        }
+      ],
+      "status": "source-reference-only"
+    },
+    {
+      "name": "LLVMTypeOf",
+      "references": [
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 159
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 428
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1039
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1053
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1101
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1135
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1240
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1262
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1281
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1295
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1311
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1323
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1337
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1421
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1441
+        },
+        {
+          "path": "src/iridium/air.cpp",
+          "line": 1460
+        }
+      ],
+      "status": "source-reference-only"
+    }
+  ],
+  "fixtures": [
+    {
+      "relative_path": "test/basic-compute/add.metallib",
+      "sha256": "5bfe7eb51b58024e72e9583ca3656da612625540213cbdf6da7b4e00a003ab91",
+      "license_status": "unconfirmed",
+      "origin_status": "unconfirmed",
+      "toolchain": null,
+      "approved_for_translation": false
+    },
+    {
+      "relative_path": "test/cube/shaders.metallib",
+      "sha256": "913733265cae15bc0598b128cf428ab282c82a297d3258c0f773f889109b7d9b",
+      "license_status": "unconfirmed",
+      "origin_status": "unconfirmed",
+      "toolchain": null,
+      "approved_for_translation": false
+    },
+    {
+      "relative_path": "test/cubemap/shaders.metallib",
+      "sha256": "1f0b4b9d43c4459f434e569b15dbb106fa18e78b9798426a40f63c10b158b553",
+      "license_status": "unconfirmed",
+      "origin_status": "unconfirmed",
+      "toolchain": null,
+      "approved_for_translation": false
+    },
+    {
+      "relative_path": "test/lighting/shaders.metallib",
+      "sha256": "0ad1a253f38b0c02c111867209a382ed7af4874ba6fa7429039670bcccd45283",
+      "license_status": "unconfirmed",
+      "origin_status": "unconfirmed",
+      "toolchain": null,
+      "approved_for_translation": false
+    },
+    {
+      "relative_path": "test/sampler/AAPLShaders.metallib",
+      "sha256": "3659e1fe3b58798c9d1d8b63aea39aed9bd54c81826fc2bb94767ab702edba38",
+      "license_status": "unconfirmed",
+      "origin_status": "unconfirmed",
+      "toolchain": null,
+      "approved_for_translation": false
+    },
+    {
+      "relative_path": "test/texturing/shaders.metallib",
+      "sha256": "cccf640c6727e721c5eff1f353e4f78268bdec99c797e6ceb751b28cc8585dd6",
+      "license_status": "unconfirmed",
+      "origin_status": "unconfirmed",
+      "toolchain": null,
+      "approved_for_translation": false
+    },
+    {
+      "relative_path": "test/triangle/AAPLShaders.metallib",
+      "sha256": "9cceab6bd66f5499b4a39fbc2e832fc08d0366dd1a52e2c6f4a0ef98e5916f33",
+      "license_status": "unconfirmed",
+      "origin_status": "unconfirmed",
+      "toolchain": null,
+      "approved_for_translation": false
+    }
+  ]
+}
